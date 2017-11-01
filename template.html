@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js'></script>
+    <title>blog</title>
+</head>
+<body>
+    <div id='app'>
+        %content%
+    </div>
+
+    <script>
+        let html = document.getElementById('app').innerHTML
+        html = marked(html)
+    </script>
+</body>
+</html>
